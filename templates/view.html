@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Databse View{% endblock %}
+
+{% block content %}
+    {% for item in values %}
+<p>Name: {{item.name}}</p>
+<p>Email: {{item.email}}</p>
+<hr>
+{% endfor %}
+<a href="/view/clear"><button>Clear</button></a>
+{% endblock %}
